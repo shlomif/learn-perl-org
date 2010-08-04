@@ -2,6 +2,19 @@ Somewhere to play with learn.perl.org ideas
 
 The plan...
 
-Learn::Example::XXX
+There are many great Perl tutorials that already exist and talk about the basics of Perl and it's syntax. Knowing where to start with specific knowledge spaces after this is then hard.
 
+We want to create a single place that is a resource for showing the vast array of problem spaces which Perl can help with. But most importantly also show good examples (including how to test these problem spaces) of solving specific problems.
 
+All examples are to be based on Task::Kensho, this allows users to install a single module (Strawberry Perl Pro for windows already has Task::Kensho ready out of the box!) and it's dependencies. So if the use it playing with Perl they don't have to keep installing more modules from CPAN.
+
+All code is presented as a standard Perl CPAN Package, helping train learners about best practices. It will also allow everything to be uploaded (and tested) through the CPAN.
+
+Learn::Example::XXX::YY
+- An example for XXX::YY e.g. Spreadsheet::XLS::Read / Spearsheet::XLS::Write
+- Specific focus on one or two modules from the Task::Kensho list and how they can be used in a specific problem space (sending emails / dates and timezones / spreadsheets).
+
+Learn::Projects::XXX
+- Larger projects, possibly suggesting look at Example(s)::...
+- Test suites, so user knows when they have finished?
+- Dot to dot programming?
