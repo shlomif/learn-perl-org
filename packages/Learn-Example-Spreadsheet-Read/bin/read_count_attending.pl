@@ -21,20 +21,30 @@ my $sheet = $spreadsheets[0];
 my @headings = $sheet->next_row();
 
 # Create somewhere to store the data from the spreadsheet
-my @rows;
+my @people;
 
 # Read in the data
 while ($sheet->has_data) {  
+    
     # Get a new row of data as an array
     my @data = $sheet->next_row;
 
-    # %row is a hash, we want the headings as the keys, and data as the values
-    my %row{@headings} = @data;
+    # %person is a hash, we want the headings as the keys, and data as the values.
+    # This syntax is cleaner than having to loop over both the data and the headings
+    my %person{@headings} = @data;
     
-    # Add this row hash into our @rows, we add the \ in front as we only want a reference
+    # Add this row hash into our @people, we add the \ in front as we only want a reference
     # instead of a copy of it
-    push @rows, \%row;
+    push @people, \%person;
 }
+
+# Now we have the data, decide what to do with it
+
+# foreach my $person (@people) {
+#     
+# }
+
+
 
 
 

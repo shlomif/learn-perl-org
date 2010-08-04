@@ -17,6 +17,8 @@ ALL of this is still to be confirmed
  * All files/dirs must use Path::Class
  
  * Scripts and tests must start with: #!/usr/bin/env perl
+ 
+ * use <TODO> this Perl::Tidy config
 
 =back
 
