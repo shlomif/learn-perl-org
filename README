@@ -18,3 +18,5 @@ Learn::Projects::XXX
 - Larger projects, possibly suggesting look at Example(s)::...
 - Test suites, so user knows when they have finished?
 - Dot to dot programming?
+
+Distributing by CPAN means it is easy for others to contribute - but this does not mean they will be automatically accepted onto the learn.perl.org site (they must follow specific standards set out in Learn::ContributeGuide.pm)

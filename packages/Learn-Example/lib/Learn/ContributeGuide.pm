@@ -1,4 +1,4 @@
-package Learn::CodeGuide
+package Learn::ContributeGuide
 
 =head1 NAME
 
