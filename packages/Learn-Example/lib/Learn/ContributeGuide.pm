@@ -14,11 +14,11 @@ ALL of this is still to be confirmed
 
 =over 4
 
- * All files/dirs must use Path::Class
+=item * All files/dirs must use Path::Class
  
- * Scripts and tests must start with: #!/usr/bin/env perl
+=item  * Scripts and tests must start with: #!/usr/bin/env perl
  
- * use <TODO> this Perl::Tidy config
+=item  * use <TODO: add link> this Perl::Tidy config before upload to CPAN
 
 =back
 

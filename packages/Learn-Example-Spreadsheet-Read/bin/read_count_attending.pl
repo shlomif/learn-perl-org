@@ -11,7 +11,7 @@ use Spreadsheet::ParseExcel::Simple;
 my $file = 'wedding_attendees.xls';
 my $xls = Spreadsheet::ParseExcel::Simple->read($file);
 
-# Get all the sheets into an array.
+# Get all the sheets into an array (list).
 my @spreadsheets = $xls->sheets;
 
 # We only have one sheet, so get that from the array
@@ -30,19 +30,34 @@ while ($sheet->has_data) {
     my @data = $sheet->next_row;
 
     # %person is a hash, we want the headings as the keys, and data as the values.
-    # This syntax is cleaner than having to loop over both the data and the headings
+    # This syntax is shorter than having to loop over both the data and the headings
     my %person{@headings} = @data;
     
-    # Add this row hash into our @people, we add the \ in front as we only want a reference
-    # instead of a copy of it
+    # Add this person hash into our @people, we add the \ in front as we only want a reference
+    # instead of a copy of it which generally good practice
     push @people, \%person;
 }
 
 # Now we have the data, decide what to do with it
 
-# foreach my $person (@people) {
-#     
-# }
+# Lets count how many people are attending...
+
+# Store our counts here
+my %counters;
+
+foreach my $person (@people) {
+    # Find out what the persons status is, if we do not have one default to 'unknown'
+    my $status = $person->{'Attending'} || 'unknown';
+
+    # Increment the counter for this status
+    $counters{$status}++;
+}
+
+# Lets print this to screen
+print "Atteneding statuses and counts...\n";
+foreach my $status (keys %counters) {
+    print "$status   - " . $counters{$status} . "\n";
+}
 
 
 
