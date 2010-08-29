@@ -59,10 +59,16 @@ foreach my $person (@people) {
 }
 
 # Lets print this to screen
-my $top_label = 'Numbers attending...';
-print "$top_label\n";
-print "-" x length($top_label) . "\n";
+my $label = 'Numbers attending...';
+
+# Print our heading to screen
+print "$label\n";
+# Put a row ---- under this, the same number of characters as are in our label
+print "-" x length($label) . "\n";
+
+# For each of our statuses print how many responses we have had
 foreach my $status (keys %counters) {
+    # \t is a tab
     print "$status\t- " . $counters{$status} . "\n";
 }
 
