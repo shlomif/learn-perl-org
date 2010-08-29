@@ -28,13 +28,18 @@ while ($sheet->has_data) {
     
     # Get a new row of data as an array
     my @data = $sheet->next_row;
+    
+    # If the first column is empty then skip to the next record
+    next unless $data[0];
 
     # %person is a hash, we want the headings as the keys, and data as the values.
-    # This syntax is shorter than having to loop over both the data and the headings
-    my %person{@headings} = @data;
+    my %person;
+    # This syntax (called a 'hash slice') is shorter than having to loop over 
+    # both the data and the headings
+    @person{@headings} = @data;
     
-    # Add this person hash into our @people, we add the \ in front as we only want a reference
-    # instead of a copy of it which generally good practice
+    # Add this person hash into our @people, we add the \ in front as we only 
+    # want a reference instead of a copy of it which generally good practice
     push @people, \%person;
 }
 
@@ -54,9 +59,11 @@ foreach my $person (@people) {
 }
 
 # Lets print this to screen
-print "Atteneding statuses and counts...\n";
+my $top_label = 'Numbers attending...';
+print "$top_label\n";
+print "-" x length($top_label) . "\n";
 foreach my $status (keys %counters) {
-    print "$status   - " . $counters{$status} . "\n";
+    print "$status\t- " . $counters{$status} . "\n";
 }
 
 
