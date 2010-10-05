@@ -6,7 +6,7 @@ Introduction to Perl tutorials already exist. Knowing where to start with specif
 
 http://learn.perl.org/ should show the range of problem spaces which Perl can solve. With good examples of solving specific problems (including how to test them).
 
-All examples are to be based on Task::Kensho, this allows users to install a single module (Strawberry Perl Pro for windows already has most of Task::Kensho ready out of the box!) and it's dependencies. The means we can can have examples without requiring the user to download more and more modules from CPAN.
+All examples are to be based on Task::Kensho, this allows users to install a single module (Strawberry Perl Pro for windows already has most of Task::Kensho ready out of the box!) and its dependencies. The means we can can have examples without requiring the user to download more and more modules from CPAN.
 
 Task::Kensho's long term goal is to be the base of ExtendedCore which OS vendors would be encouraged to package, this would include long term support (4-5 years) and deprecation cycle policies etc. 
 
