@@ -6,19 +6,34 @@ Introduction to Perl tutorials already exist. Knowing where to start with specif
 
 http://learn.perl.org/ should show the range of problem spaces which Perl can solve. With good examples of solving specific problems (including how to test them).
 
-All examples are to be based on Task::Kensho, this allows users to install a single module (Strawberry Perl Pro for windows already has most of Task::Kensho ready out of the box!) and its dependencies. The means we can can have examples without requiring the user to download more and more modules from CPAN.
+All examples are to be based on Task::Kensho, this allows users to install a single module (Strawberry Perl Pro for windows already has most of Task::Kensho 
+ready out of the box!) and its dependencies. The means we can can have examples without requiring the user to download more and more modules from CPAN.
 
-Task::Kensho's long term goal is to be the base of ExtendedCore which OS vendors would be encouraged to package, this would include long term support (4-5 years) and deprecation cycle policies etc. 
+Task::Kensho's long term goal is to be the base of ExtendedCore which OS vendors would be encouraged to package, this would include long term support (4-5 years) 
+and deprecation cycle policies etc. 
 
-All code is presented as a standard Perl CPAN Package, helping train learners about best practices. It will also allow everything to be uploaded (and tested) through the CPAN.
+All code is presented as a standard Perl CPAN Package, helping train learners about best practices. It will also allow everything to be uploaded (and tested) 
+through the CPAN.
 
 Learn::Example::XXX::YY
 - An example for XXX::YY e.g. Spreadsheet::XLS::Read / Spearsheet::XLS::Write
-- Specific focus on one or two modules from the Task::Kensho list and how they can be used in a specific problem space (sending emails / dates and timezones / spreadsheets).
+- Specific focus on one or two modules from the Task::Kensho list and how they can be used in a specific problem space (sending emails / dates and timezones 
+/ spreadsheets).
 
 Learn::Projects::XXX - PHASE 2
 - Larger projects, possibly suggesting look at Example(s)::...
 - Test suites, so user knows when they have finished?
 - Dot to dot programming?
 
-Distributing by CPAN means it is easy for others to contribute - but this does not mean they will be automatically accepted onto the learn.perl.org site (they must follow specific standards set out in Learn::ContributeGuide.pm)
+Distributing by CPAN means it is easy for others to contribute - but this does not mean they will be automatically accepted onto the learn.perl.org site (they must 
+follow specific standards set out in Learn::ContributeGuide.pm)
+
+Existing developers / system administrators
+
+If you are already a developer or systems administrator, in any language, on any platform, please skim through the site, there are lots of details and resources which 
+you will still find useful. It is also worth reviewing to find out what 'Modern' Perl actually is. 
+
+refer - 
+https://learn.perl.org/
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwil_eaejtr6AhUutmMGHbMbD4IQFnoECBoQAQ&url=https%3A%2F%2Fwww.oreilly.com%2Flibrary%2Fview%2Flearning-perl-6th%2F9781449311063%2F&usg=AOvVaw2NP-8aKphAs3FJqVhmIC5G
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwil_eaejtr6AhUutmMGHbMbD4IQFnoECBoQAQ&url=https%3A%2F%2Fwww.oreilly.com%2Flibrary%2Fview%2Flearning-perl-6th%2F9781449311063%2F&usg=AOvVaw2NP-8aKphAs3FJqVhmIC5G
